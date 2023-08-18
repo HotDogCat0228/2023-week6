@@ -1,3 +1,186 @@
-.index-title {
-  font-size: 100px;
+.event-img{
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true');
+    height: 518px;
+    background-size: cover;
+    background-position: 50%;
+}
+.btn-event{
+    height: 0; 
+    padding-bottom: 48.208784% !important; 
+    padding-top: 48.208784% !important;
+    img{
+        width: 80px; 
+        height: 80px;
+    }
+}
+.btn-event.active{
+    p{
+        color:#FBFF22;
+    }
+}
+.btn-subscribe:hover{
+    color:#FBFF22 !important ;
+}
+.recent-card{
+    &-date{
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 12px;
+        width: 100%;
+        padding-bottom: 12px;
+        border-bottom: 3px solid;
+    }
+    &-img{
+        width: 100%;
+        height: 255px;
+        margin-bottom: 12px;
+    }
+    &-title{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    &-content{
+        font-family:'Noto Sans TC';
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+    &-type{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-icon{
+        width: 24px;
+        height: 24px;
+    }
+}
+.font-custom{
+    font-family: 'Noto Sans TC',;
+}
+.online-img{
+    height: 317px;
+    object-fit: cover;
+    object-position: 0 32%;
+}
+.online-label{
+    border: 2px solid;
+    border-left: 4px solid;
+    padding: 4px 22px 4px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+        border-left: 4px solid #FBFF22;
+        transition: background-color 0.5s;
+    }
+}
+.swiper{
+    background-color: #000;
+  }
+.swiper-wrapper {
+    transition-timing-function: linear;
+}
+.swiper-slide {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: #FBFF22;
+    background: #000;
+}
+.highlight-card{
+    padding: 16px;
+    border: 1px solid;
+    position: relative;
+    img{
+        width: 100%;
+        height: 274px;
+        object-fit: cover;
+        margin-bottom: 16px;
+    }
+    &-title{
+        position: absolute;
+        padding: 8px 16px;
+        background: #fff;
+        font-weight: 700;
+        left: 33%;
+        top:-24px;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin-bottom: 32px;
+    }
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagenation{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    &-item{
+        font-size: 16px;
+        width: 40px;
+        height: 40px;
+        border:1px solid;
+        font-weight: 700;
+        line-height: 1.5;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-item:hover{
+        background: #000;
+        color: #FBFF22;
+    }
+    &-item.active{
+        background: #000;
+        color: #FBFF22;
+    }
+}
+@media(max-width:720px){
+    .event-img{
+        height: 350px;
+    }
+    .btn-event{
+        img{
+            width: 40px; 
+            height: 40px;
+        }
+    }
+    .btn-event.active{
+        p{
+            font-size: 24px !important;
+            color:#FBFF22;
+        }
+    }
+    .swiper-slide{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-size: 16px;
+    }
+    .border-md-start{
+        border-left: 1px solid;
+    }
+    .online-label{
+        font-size: 14px;
+        border: 1px solid;
+        border-left: 4px solid;
+        padding: 4px 15px 4px 11px;
+    }
 }
